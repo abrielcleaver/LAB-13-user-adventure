@@ -16,6 +16,7 @@ const userForm = document.getElementById('user-form');
 
 // On form submit
 userForm.addEventListener('start', (e) => {
+
   // prevent default
     e.preventDefault();
   // create userData(formData) object
