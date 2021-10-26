@@ -9,19 +9,20 @@ test('generateUser returns user object', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = {
-        Name: 'Joy',
-        Avatar: 'Cloe',
+        Name: 'joy',
+        Avatar: 'cloe',
         Blings: 0,
+        Lives: 0,
         Completed: {}
     };
     
-    const formData = new FormData();
-    formData.set('name', 'joy');
-    formData.set('avatar', 'cloe');
+    const userData = new FormData();
+    userData.set('name', 'joy');
+    userData.set('avatar', 'cloe');
 
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = generateUser(formData);
+    const actual = generateUser(userData);
 
     //Expect
     // Make assertions about what is expected versus the actual result
