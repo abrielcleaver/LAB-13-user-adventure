@@ -10,5 +10,6 @@ export function generateUser(userData) {
 }
 
 export function setUser(userObj) {
-
+    const userString = JSON.stringify(userObj);
+    localStorage.setItem('USER', userString);
 }

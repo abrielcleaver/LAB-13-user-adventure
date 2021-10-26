@@ -4,7 +4,7 @@
 import { generateUser, setUser } from '../utils.js';
 
 const test = QUnit.test;
-const skip = QUnit.skip;
+// const skip = QUnit.skip;
 
 test('generateUser returns user object', (expect) => {
     //Arrange
