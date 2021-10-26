@@ -1,12 +1,19 @@
-# LAB-13 "Adventure Quest" Plan
+# LAB-13 userAdventure 
+- Build a user adventure, quiz, or game that follows this pattern:
+    * User Info Page - starting information for user
+    * Map Page - user presented with list of quests (generated from metadata)
+    * Quest Detail Page with Options - user completes quest by picking choice from list of choice (generated from metadata and URLSearchParams)
+    * Repeat thru steps #2 and #3 until end conditions (HP less than zero or all quests completed)
+    * Final results page on end condition(s)
 
 ## Making a plan
 
-## Home Page
+### Home Page
 * HTML Elements
-- [] text input for name
-- [] radio button for user avatar
-- [] form submit button
+- [x] text input for name
+- [x] radio button for user avatar
+- [] add image of avatars for radio button
+- [x] form submit button
 * Events
  - [] On form submit
     - [] generate user object using form data (generateUser)
@@ -18,7 +25,7 @@
     - [] store user data in LS (setUser)
     - [] redirect to map page
 
-## Map Page
+### Map Page
 * HTML Elements
 - [] List links for for each quest (generated from the quest-data)
     - [] links should not be clicable if user completed quest
@@ -31,7 +38,7 @@
 - [] On page load
     - [] grab data from LS and display it
 
-## Quest Detail Page
+### Quest Detail Page
 * HTML Elements
 - [] Title
 - [] Description
@@ -48,13 +55,12 @@
         * Choices: [{ multipleChoice1}, {multipleChoice2}, {id: , description: , result: , hp: , gold: } }] 
         * Description -> at the option displays before you select it
         * Results -> what happens if you select it
-## On page load
-- [] Grab data from LS and display it
-- [] Reset updated data into LS
 
 
 * Events
 - [] On page load
+    - [] Grab data from LS and display it
+    - [] Reset updated data into LS
     - [] get the quest ID from the URL Search Parameter
     - [] load quest data onto page
 - [] On form submit
