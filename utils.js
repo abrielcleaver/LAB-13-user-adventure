@@ -9,6 +9,6 @@ export function generateUser(userData) {
     };
 }
 
-export function setUser() {
+export function setUser(userObj) {
 
 }
