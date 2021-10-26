@@ -15,7 +15,7 @@ import { generateUser, setUser } from './utils.js';
 const userForm = document.getElementById('user-form');
 
 // On form submit
-userForm.addEventListener('start', (e) => {
+userForm.addEventListener('submit', (e) => {
 
   // prevent default
     e.preventDefault();

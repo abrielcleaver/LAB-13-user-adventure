@@ -16,13 +16,13 @@
 - [x] form submit button
 * Events
  - [] On form submit
-    - [] generate user object using form data (generateUser)
+    - [x] generate user object using form data (generateUser)
         * name:
-        * class:
-        * hp:
-        * gold:
+        * avatar:
+        * bling:
+        * lives:
         * completed: { quest1: true, quest2: false, quest3: false };
-    - [] store user data in LS (setUser)
+    - [x] store user data in LS (setUser)
     - [] redirect to map page
 
 ### Map Page
