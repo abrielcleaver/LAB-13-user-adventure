@@ -26,7 +26,7 @@ for (let choice of questData.choices){
     const span = document.createElement('span');
     span.textContent = choice.description;
     label.append(input, span);
-    questData.append(label);
+    questChoices.append(label);
 }
 
 const button = document.createElement('button');
