@@ -12,7 +12,7 @@
 * HTML Elements
 - [x] text input for name
 - [x] radio button for user avatar
-- [ ] add image of avatars for radio button
+- [x] add image of avatars for radio button
 - [x] form submit button
 * Events
  - [x] On form submit
@@ -29,7 +29,7 @@
 * HTML Elements
 - [x] List links for for each quest (generated from the quest-data)
     - [x] generate an <a> for each quest with href = "/quest?id=<questId>"
-      - [ ] ex: < a href = "/quest?id=shokugeki>Shokugeki Battle < /a>
+      - [x] ex: < a href = "/quest?id=shokugeki>Shokugeki Battle< /a>
     - [ ] links should not be clickable if user completed quest
     - [x] link should contain a URL search parameter containing quest ID
         * using query parameters URL = quest?key=value
@@ -39,34 +39,34 @@
 * Events
 - [ ] On page load
     - [ ] grab data from LS and display it
+    - [ ] If user has completed all quests -- redirect to end game page
+    - [ ] If user has negative hungry -- redirect to end game page
 
 ### Quest Detail Page
 * HTML Elements
-- [ ] Title
-- [ ] Description
-- [ ] Quest image
-- [ ] Quest choices (radio buttons)
+- [x] Title
+- [x] Description
+- [x] Quest image
+- [x] Quest choices (radio buttons)
 
-- [] Character object display somewhere (name, hp, gold)
- - [] Quest object
+- [ ] Character object display somewhere (name, hungry, full)
+ - [ ] Quest object
         * ID:
         * Title:
         * Img:
         * Description:
         * Map: coordinates to position the link on top of the map image
-        * Choices: [{ multipleChoice1}, {multipleChoice2}, {id: , description: , result: , hp: , gold: } }] 
-        * Description -> at the option displays before you select it
+        * Choices: [{ multipleChoice1}, {multipleChoice2}, {id: , description: , result: , hungry: , full: } }] 
+        * Description -> what the option displays before you select it
         * Results -> what happens if you select it
 
 * Events
 - [] On page load
-    - [] Grab data from LS and display it
-    - [] Reset updated data into LS
-    - [] get the quest ID from the URL Search Parameter
-    - [] load quest data onto page
+    - [x] get the quest ID from the URL Search Parameter
+    - [x] load quest data onto page
 - [] On form submit
-    - [] update user data
-    - [] redirect to map page
+    - [x] update user data
+    - [x] redirect to map page
     - [] if quests completed, redirect to results -- if else redirect to map
 ---
 
@@ -77,9 +77,9 @@
 - [ ] Meta Data: 3 or more quests plus user choices	(1 pt)
 - [x] Home Page: Collect User Information	(1 pt)
 - [x] Storage Functions: TDD Functions to create User (generateUser) & store User (setUser) in LS (2 pt)
-- [ ] Map Page / Quest List: List of Quests using URLSearchParam links (2 pt)
-- [ ] Quest Detail Page uses query id to load correct data (1 pt)
-- [ ] Quest Detail Page: Shows quest information (images, description)	(1 pt)
+- [x] Map Page / Quest List: List of Quests using URLSearchParam links (2 pt)
+- [x] Quest Detail Page uses query id to load correct data (1 pt)
+- [x] Quest Detail Page: Shows quest information (images, description)	(1 pt)
 - [ ] Quest Detail Page: Presents Quest Choices	(1 pt)
 
 ---
