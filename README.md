@@ -27,11 +27,11 @@
 
 ### Map Page
 * HTML Elements
-- [ ] List links for for each quest (generated from the quest-data)
-    - [ ] generate an <a> for each quest with href = "/quest?id=<questId>"
+- [x] List links for for each quest (generated from the quest-data)
+    - [x] generate an <a> for each quest with href = "/quest?id=<questId>"
       - [ ] ex: < a href = "/quest?id=shokugeki>Shokugeki Battle < /a>
     - [ ] links should not be clickable if user completed quest
-    - [ ] link should contain a URL search parameter containing quest ID
+    - [x] link should contain a URL search parameter containing quest ID
         * using query parameters URL = quest?key=value
 - [ ] Map image
 - [ ] Display avatar info
@@ -72,7 +72,8 @@
 
 ## Part-One Grading Checklist
 
-- [ ] Hosted on GitHub with URL in About section (1 pt)
+- [x] Hosted on GitHub with URL in About section (1 pt)
+    - [ ] https://abrielcleaver.github.io/LAB-13-user-adventure/
 - [ ] Meta Data: 3 or more quests plus user choices	(1 pt)
 - [x] Home Page: Collect User Information	(1 pt)
 - [x] Storage Functions: TDD Functions to create User (generateUser) & store User (setUser) in LS (2 pt)
