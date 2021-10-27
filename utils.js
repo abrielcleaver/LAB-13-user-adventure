@@ -15,5 +15,6 @@ export function setUser(newUser) {
 }
 
 export function getUser(){
-    
+    const userString = localStorage.getItem('USER');
+    return JSON.parse(userString);
 }
