@@ -15,39 +15,49 @@
 </head>
 
 <body>
-<h2>Food Wars: Shokugeki No Soma</h2>
-<form id="user-form">
-    <label for="name">
-        Name:
-        <input name="name" type="text">
-    </label>
-
-    <section id="avatars">
-        <label>
-            <input type="radio" name="avatar" required value="yukihira">
-            Soma Yukihira
-            <img src="" alt="">
+    <header>
+      
+    </header>
+    <h1>
+        Food Wars: Shokugeki No Soma
+        <!-- add food wars logo to replace text above -->
+    </h1>
+    <p>Enter your name & pick a character, then press start!</p>
+    
+    <form id="user-form">
+        <label id="name-input" for="name">
+            Name:
+            <input id="name-input-box" name="name" type="text">
         </label>
-
-        <label>
-            <input type="radio" name="avatar" required value="nakiri">
-            Erina Nakiri
-            <img src="" alt="">
-        </label>
-        <label>
-            <input type="radio" name="avatar" required value="hisako">
-            Hisako Aratoe
-            <img src="" alt="">
-        </label>
-        <label>
-            <input type="radio" name="avatar" required value="shun">
-             Shun Ibusaki
-            <img src="" alt="">
-        </label>
-
-    </section>
-
-    <button id="start-button">Start</button>
+        <section id="avatars">
+            <div>
+                <label>
+                    <input type="radio" name="avatar" required value="yukihira">
+                    Soma Yukihira
+                    <img src="./assets/characters/soma-yukihira.png" alt="" height="400px">
+                </label>
+                <label>
+                    <input type="radio" name="avatar" required value="nakiri">
+                    Erina Nakiri
+                    <img src="./assets/characters/erina-nakiri.png" alt="" height="400px">
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="avatar" required value="hisako">
+                    Hisako Arato
+                    <img src="./assets/characters/hisako-arato.png" alt="" height="400px">
+                </label>
+                <label>
+                    <input type="radio" name="avatar" required value="akira">
+                    Akira Hayama
+                    <img src="./assets/characters/akira-hayama.png" alt="" height="400px">
+                </label>
+            </div>
+            <div class="button">
+                <button id="start-button">START</button>
+            </div>
+        </section>
 </form>
 
     <script type="module" src="./app.js"></script>
