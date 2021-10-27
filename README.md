@@ -79,7 +79,8 @@
 
 - [x] Hosted on GitHub with URL in About section (1 pt)
     - [ ] https://abrielcleaver.github.io/LAB-13-user-adventure/
-- [ ] Meta Data: 3 or more quests plus user choices	(1 pt)
+- [x] Meta Data: 3 or more quests 
+        - [ ] plus user choices	(1 pt)
 - [x] Home Page: Collect User Information	(1 pt)
 - [x] Storage Functions: TDD Functions to create User (generateUser) & store User (setUser) in LS (2 pt)
 - [x] Map Page / Quest List: List of Quests using URLSearchParam links (2 pt)

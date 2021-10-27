@@ -40,6 +40,7 @@ questChoices.addEventListener('submit', (e)=>{
     e.preventDefault();
     const selectedRadio = document.querySelector('input[type="radio"]:checked');
     const choice = findById(questData.choices, selectedRadio.value);
+
   // get userdata from local Storage (getUser)
     const user = getUser();
 
