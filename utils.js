@@ -13,3 +13,7 @@ export function setUser(newUser) {
     const userString = JSON.stringify(newUser);
     localStorage.setItem('USER', userString);
 }
+
+export function getUser(){
+    
+}
