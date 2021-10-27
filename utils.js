@@ -3,8 +3,8 @@ export function generateUser(userData) {
     return {
         Name: userData.get('name'),
         Avatar: userData.get('avatar'),
-        Blings: 0,
-        Lives: 0,
+        Hungry: 0,
+        Full: 0,
         Completed: {}
     };
 }

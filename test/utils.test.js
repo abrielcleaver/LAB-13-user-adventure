@@ -11,15 +11,15 @@ test('generateUser returns user object', (expect) => {
     // Set up your arguments and expectations
     const expected = {
         Name: 'joy',
-        Avatar: 'cloe',
-        Blings: 0,
-        Lives: 0,
+        Avatar: 'nakiri',
+        Hungry: 0,
+        Full: 0,
         Completed: {}
     };
     
     const userData = new FormData();
     userData.set('name', 'joy');
-    userData.set('avatar', 'cloe');
+    userData.set('avatar', 'nakiri');
 
     //Act 
     // Call the function you're testing and set the result to a const
@@ -35,9 +35,9 @@ test('setUser saves user info to LS', (expect) => {
     // Set up your arguments and expectations
     const userObj = {
         Name: 'joy',
-        Avatar: 'cloe',
-        Blings: 0,
-        Lives: 0,
+        Avatar: 'nakiri',
+        Hungry: 0,
+        Full: 0,
         Completed: {}
     };
     
