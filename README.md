@@ -9,7 +9,7 @@
 ## Making a plan
 
 ### Home Page
-* HTML Elements
+* HTML Foundational Elements
 - [x] text input for name
 - [x] radio button for user avatar
 - [x] add image of avatars for radio button
@@ -24,6 +24,11 @@
         * Completed: { quest1: true, quest2: false, quest3: false };
     - [x] store user data in LS (setUser)
     - [x] redirect to map page
+
+* Misc:
+    - [x] adjust sizing on avatar images
+    - [ ] remove input button and have user select character image instead
+    - [ ] add userProfile to header w/name, avatar, hungry, & full
 
 ### Map Page
 * HTML Elements
@@ -49,8 +54,8 @@
 - [x] Quest image
 - [x] Quest choices (radio buttons)
 
-- [ ] Character object display somewhere (name, hungry, full)
- - [ ] Quest object
+- [ ] Character object display (name, hungry, full) -- put in header
+- [ ] Quest object
         * ID:
         * Title:
         * Img:
