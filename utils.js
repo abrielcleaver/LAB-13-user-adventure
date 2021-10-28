@@ -3,7 +3,7 @@ export function generateUser(userData) {
     return {
         Name: userData.get('name'),
         Avatar: userData.get('avatar'),
-        Hungry: 0,
+        Hungry: 40,
         Full: 0,
         Completed: {}
     };
