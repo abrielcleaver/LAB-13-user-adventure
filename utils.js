@@ -32,3 +32,7 @@ export function scoreQuest(choiceObject, questId, userObject){
     userObject.full += choiceObject.full;
     userObject.completed[questId] = true;
 }
+
+export function allQuestsCompleted() {
+
+}
