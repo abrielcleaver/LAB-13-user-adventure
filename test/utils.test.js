@@ -1,7 +1,7 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
 
-import { generateUser, setUser, getUser, scoreQuest } from '../utils.js';
+import { generateUser, setUser, getUser, scoreQuest, allQuestsCompleted } from '../utils.js';
 
 const test = QUnit.test;
 // const skip = QUnit.skip;
@@ -101,4 +101,36 @@ test('scoreQuest should update hungry, full, & completed on userObj', (expect)=>
     expect.equal(userObj.hungry, 44);
     expect.equal(userObj.full, 5);
     expect.equal(userObj.completed[questId], true);
+});
+
+test('allQuestsCompleted should return true if user completed ALL quests', (expect) =>{
+    // Arrange
+    // Set up your arguments and expectations
+    const userObj = {
+        completed: { shokugeki: true, dormitory: true, moonFest: true, stagiaire: true }
+    };
+    
+    
+    // Act
+    // Call the function you're testing and set the result to a const
+    const actual = allQuestsCompleted(userObj);
+
+    // Assert
+    expect.equal(actual, true);
+});
+
+test('allQuestsCompleted should return false if user has NOT completed ALL quests', (expect) =>{
+    // Arrange
+    // Set up your arguments and expectations
+    const userObj = {
+        completed: { shokugeki: true, moonFest: true, stagiaire: true }
+    };
+    
+    
+    // Act
+    // Call the function you're testing and set the result to a const
+    const actual = allQuestsCompleted(userObj);
+
+    // Assert
+    expect.equal(actual, false);
 });
