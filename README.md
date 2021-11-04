@@ -66,13 +66,23 @@
         * Results -> what happens if you select it
 
 * Events
-- [] On page load
+- [x] On page load
     - [x] get the quest ID from the URL Search Parameter
     - [x] load quest data onto page
 - [] On form submit
     - [x] update user data
     - [x] redirect to map page
-    - [] if quests completed, redirect to results -- if else redirect to map
+    - [ ] if quests completed, redirect to results -- if else redirect to map
+
+### End page
+* Report to the user how they did
+- [ ] Load userObj
+- [ ] TDD: write function(s) to test conditions of user object
+- [ ] Update presentation to reflect results:
+    - [ ] Text/messages
+    - [ ] Images
+    - [ ] Show/Hide Things
+- [ ] Offer link to "Play Again"
 ---
 
 ## Part-One Grading Checklist
@@ -86,8 +96,16 @@
 - [x] Map Page / Quest List: List of Quests using URLSearchParam links (2 pt)
 - [x] Quest Detail Page uses query id to load correct data (1 pt)
 - [x] Quest Detail Page: Shows quest information (images, description)	(1 pt)
-- [ ] Quest Detail Page: Presents Quest Choices	(1 pt)
+- [x] Quest Detail Page: Presents Quest Choices	(1 pt)
 
+
+## Part-Two Grading Checklist
+
+- [ ] Handle form submit on quest page and update user object (3 pts)
+- [ ] List Page handles completed tasks	(2 pts)
+- [ ] List Page detects end conditions and navigates to end page (1 pt)
+- [ ] Evaluation of result (2 pts)
+- [ ] End Page design and information display (2 pts)
 ---
 
 ## To Run Cypress Tests

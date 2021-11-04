@@ -12,7 +12,7 @@ test('generateUser returns user object', (expect) => {
     const expected = {
         Name: 'joy',
         Avatar: 'nakiri',
-        Hungry: 0,
+        Hungry: 40,
         Full: 0,
         Completed: {}
     };
@@ -107,9 +107,13 @@ test('allQuestsCompleted should return true if user completed ALL quests', (expe
     // Arrange
     // Set up your arguments and expectations
     const userObj = {
-        completed: { shokugeki: true, dormitory: true, moonFest: true, stagiaire: true }
+        completed: { 
+            shokugeki: true, 
+            dormitory: true,
+            moonFest: true,
+            stagiaire: true
+        },
     };
-    
     
     // Act
     // Call the function you're testing and set the result to a const
@@ -123,7 +127,7 @@ test('allQuestsCompleted should return false if user has NOT completed ALL quest
     // Arrange
     // Set up your arguments and expectations
     const userObj = {
-        completed: { shokugeki: true, moonFest: true, stagiaire: true }
+        completed: { shokugeki: true, stagiaire: true }
     };
     
     

@@ -22,10 +22,10 @@ userForm.addEventListener('submit', (e) => {
   // create userData(formData) object
     const userData = new FormData(userForm);
   // pass it to generateUser function
-    const newUser = generateUser(userData);
+    const userObj = generateUser(userData);
   // save to LS
 
-    setUser(newUser);
+    setUser(userObj);
     window.location.replace('./map');
 
 });

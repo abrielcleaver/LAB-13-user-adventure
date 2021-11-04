@@ -1,16 +1,19 @@
+// import quests from quest-data
+import quests from './data/quest-data.js';
+
 export function generateUser(userData) {
    // take in formData oject -- return
     return {
         Name: userData.get('name'),
         Avatar: userData.get('avatar'),
-        Hungry: 0,
+        Hungry: 40,
         Full: 0,
         Completed: {}
     };
 }
 
-export function setUser(newUser) {
-    const userString = JSON.stringify(newUser);
+export function setUser(userObj) {
+    const userString = JSON.stringify(userObj);
     localStorage.setItem('USER', userString);
 }
 
@@ -27,12 +30,27 @@ export function findById(id, items){
     }
 }
 
-export function scoreQuest(choiceObject, questId, userObject){
-    userObject.hungry += choiceObject.hungry;
-    userObject.full += choiceObject.full;
-    userObject.completed[questId] = true;
+export function scoreQuest(choiceObject, questId, userObj){
+    userObj.hungry += choiceObject.hungry;
+    userObj.full += choiceObject.full;
+    userObj.completed[questId] = true;
 }
 
-export function allQuestsCompleted() {
+// export function allQuestsCompleted(userObj) {
+// // loop -  if (!userObj.completed[quest.id]) return false, else return true
+//     for (let quest of quests){
+//         if (!userObj.completed[quest.id]){
+//             return false;
+//         }
+//     } 
+//     return true;
+// }
 
+export function allQuestsCompleted(userObj){
+    for (let quest of quests){
+        if (!userObj.completed[quest.id]){
+            return false;
+        }
+    }
+    return true;
 }
