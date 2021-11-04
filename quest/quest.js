@@ -1,10 +1,14 @@
 // import quest data
 import quests from '../data/quest-data.js';
+import { loadProfile } from '../render-utils.js';
 import { findById, getUser, scoreQuest, setUser } from '../utils.js';
 
 // use search params to determine which quest to display
 const params = new URLSearchParams(window.location.search);
 const questData = findById(params.get('id'), quests);
+
+//load user info
+loadProfile();
 
 // update all HTML elements with the quest data
 const title = document.getElementById('quest-title');
@@ -41,16 +45,16 @@ questChoices.addEventListener('submit', (e)=>{
     const selectedRadio = document.querySelector('input[type="radio"]:checked');
     const choice = findById(questData.choices, selectedRadio.value);
 
-  // get userdata from local Storage (getUser)
+  // get userData from local Storage (getUser)
     const user = getUser();
 
-     // update the user (scoreQuest(choice, questId, user))
+  // update the user (scoreQuest(choice, questId, user))
     scoreQuest(choice, questData.id, user);
 
-     // reset to LS (setUser)
+  // reset to LS (setUser)
     setUser(user);
 
-     // display result & link to go back to map
+  // display result & link to go back to map
 
     const questDetails = document.getElementById('quest-details');
     questDetails.classList.add('hidden');
@@ -58,9 +62,11 @@ questChoices.addEventListener('submit', (e)=>{
     const resultP = document.createElement('p');
     resultP.textContent = choice.result;
     const backLink = document.createElement('a');
-    backLink.href = '..map';
-    backLink.textContent = ' Back to Map';
+    backLink.href = '../map';
+    backLink.textContent = 'Back to Map';
 
     questResults.append(resultP, backLink);
     questResults.classList.remove('hidden');
+
+    loadProfile();
 });

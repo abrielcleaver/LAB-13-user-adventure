@@ -44,7 +44,7 @@ const dormitory = {
 };
 
 const moonFest = {
-    id: 'moon-festival',
+    id: 'moonFest',
     title: 'Moon Banquet Festival',
     // map: {},
     image: 'sns-moonfestmain-questpage.jpeg',
